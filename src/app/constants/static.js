@@ -27,18 +27,19 @@ export const Slides = [
     video: "/4th.mp4",
     duration: 3
   },
+  ,
   {
     id: 5,
-    type: "image",
-    texts: ["Pro camera system. Shoot like a filmmaker."],
-    image: "/4th.jpg",
+    type: "video",
+    texts: ["Next-gen camera. Cinematic results."],
+    video: "/6th.mp4",
     duration: 3
   },
   {
     id: 6,
-    type: "video",
-    texts: ["Next-gen camera. Cinematic results."],
-    video: "/6th.mp4",
+    type: "image",
+    texts: ["Pro camera system. Shoot like a filmmaker."],
+    image: "/4th.jpg",
     duration: 3
   }
 ];

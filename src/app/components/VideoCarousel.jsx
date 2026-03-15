@@ -28,7 +28,7 @@ function VideoCarousel() {
   }, [])
 
   return (
-    <div className="w-full flex items-center justify-center mt-20 md:mt-1">
+    <div className="w-full flex items-center justify-center mt-20 md:mt-1 bg-[#1D1D1F]">
 
       <div
         ref={vidref}
