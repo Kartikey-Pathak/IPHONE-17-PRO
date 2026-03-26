@@ -40,14 +40,14 @@ function ModelView() {
     },[])
 
     return (
-        <section className=' flex mb-40 items-center justify-center  flex-col w-full h-full'>
-        <div className="w-full flex items-center justify-center flex-col max-w-screen h-[48rem] md:h-[50rem] bg-[#1C1C1C]">
-            <div ref={headingref} className="m-15 opacity-0">
-                <h1 className=" text-2xl md:text-4xl lg:text-5xl font-semibold text-white">Take a closer look.</h1>
+        <section className=' flex mb-40 items-center justify-center  flex-col w-full bg-[#1C1C1C] h-screen'>
+        <div className="w-full flex items-center justify-center flex-col max-w-screen h-full md:h-[50rem] bg-[#1C1C1C]">
+            <div ref={headingref} className="   md:m-15 opacity-0">
+                <h1 className=" text-2xl md:text-4xl  lg:text-5xl font-semibold text-white">Take a closer look.</h1>
             </div>
 
             <div className=' flex items-center w-full justify-center bg-black md:w-[90%] pt-10 rounded-xl md:rounded-4xl '>
-                <div ref={modelref} className=' opacity-0 flex flex-col items-center  h-[38rem] w-[40%]  min-w-[15rem] '>
+                <div ref={modelref} className=' mt-32 opacity-0 flex flex-col items-center  h-[38rem] w-[40%]  min-w-[15rem] '>
                     <Model/>
                     <span className="text-white">iPhone 17 Pro</span>
                 </div>

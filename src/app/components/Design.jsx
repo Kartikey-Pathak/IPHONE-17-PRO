@@ -27,7 +27,7 @@ export default function Design() {
     }, [])
 
     return (
-        <section className=" opacity-0 d h-fit md:mt-32 bg-black w-full flex items-center flex-col">
+        <section className=" opacity-0 d h-fit mb-30 md:mt-32 bg-black w-full flex items-center flex-col">
             <h1 className=" text-xl text-[#FF791B] mt-20 font-semibold">Design</h1>
             <div className=" w-[99%] md:w-[60%] mt-10 flex items-center justify-center flex-col text-center">
                 <h1 className=" font-bold text-2xl text-white md:text-7xl ">Unibody enclosure.</h1>

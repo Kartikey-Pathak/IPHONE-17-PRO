@@ -26,18 +26,19 @@ function Nav2(){
 
 
     return(
-        <div ref={navref} className=" opacity-0 fixed backdrop-blur-3xl justify-between top-0 z-50 w-full flex-row flex h-12 bg-[#1D1D1F]/50 border-b-2 border-[#495057]">
-            <h1 className=" text-[1rem] lg:text-xl ml-10 lg:ml-64 m-2 font-semibold text-white">
-                MacBook Pro
+        <div className=' w-full flex items-center justify-center fixed top-0 z-50'>
+        <div ref={navref} className=" opacity-0 fixed backdrop-blur-3xl justify-between items-center mt-2 top-0 z-50 w-[95%] md:w-[70%] flex-row flex h-14 bg-[#1D1D1F]/50 border-1 rounded-2xl  border-[#495057]">
+            <h1 className=" text-[1rem] lg:text-xl ml-10 lg:ml-5 m-2 font-semibold text-white">
+                iPhone 17 Pro
             </h1>
-            <div className=" h-full w-[60%]  hidden lg:flex items-center justify-center gap-5 ">
-                <span className=" underline text-white">Overview</span>
-                <span className="text-gray-300 text-sm font-light">Tech Specs</span>
-                <span className="text-gray-300 text-sm font-light">Compare</span>
-                <span className="text-gray-300 text-sm font-light">Switch from PC to Mac</span>
+            <div className=" h-full w-[60%]  hidden lg:flex items-center justify-end gap-3 ">
+                
                 <br />
-               <div className=' cursor-pointer hover:bg-[#0071E3]/70 transition-all text-center text-white rounded-4xl flex items-center justify-center h-6 w-16 bg-[#0071E3]'>
-                <h1 className=' text-white font-semibold'>Buy</h1>
+               <div className=' cursor-pointer hover:bg-[#1D1D1F] border-1 p-3 transition-all text-center text-white rounded-4xl flex items-center border-gray-400 justify-center h-7 w-16 bg-transparent'>
+                <p className=' text-white text-sm  font-extralight'>Exlore</p>
+            </div>
+            <div className=' cursor-pointer hover:bg-[#0071E3]/70 mr-5 p-3 transition-all text-center text-white rounded-4xl flex items-center justify-center h-6 w-12 bg-[#0071E3]'>
+                <p className=' text-white text-sm  font-light'>Buy</p>
             </div>
             
             </div>
@@ -46,6 +47,7 @@ function Nav2(){
                 <h1 className=' text-white font-semibold'>Buy</h1>
             </div>
             </div>
+        </div>
         </div>
     )
 }

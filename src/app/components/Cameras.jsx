@@ -26,7 +26,7 @@ export default function Cameras(){
 
     }, [])
     return(
-        <section className=" c opacity-0 h-screen w-full flex items-center flex-col">
+        <section className=" c opacity-0 h-fit w-full flex items-center flex-col">
              <h1 className=" text-xl md:text-2xl text-[#FF791B] mt-30 font-semibold">Cameras</h1>
               <h1 className=" font-bold text-2xl mt-5 text-white md:text-7xl ">A big zoom forward.</h1>
               <div className=" w-full gap-1 mt-15 flex flex-col md:flex-row">
