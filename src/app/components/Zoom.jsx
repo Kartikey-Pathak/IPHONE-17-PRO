@@ -57,7 +57,7 @@ export default function Zoom() {
                             </button>
                         ))}
                     </div>
-                            <div className=" h-64 w-full">d</div>
+                            <div className=" h-64 w-full"></div>
                 </div>
 
         
