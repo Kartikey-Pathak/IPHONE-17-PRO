@@ -5,6 +5,7 @@ import ModelView from "./components/ModelView";
 import Design from "./components/Design";
 import Cameras from "./components/Cameras";
 import Zoom from "./components/Zoom";
+import Lens from "./components/Lens";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
     <Cameras/>
     <br/>
     <Zoom/>
+    <Lens/>
 
 
    </section>

@@ -2,10 +2,34 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+import { useGSAP } from "@gsap/react";
 
 export default function Zoom() {
     const [active, setActive] = useState("200");
     const imageRef = useRef(null);
+    const secref=useRef(null);
+    
+    useGSAP(() => {
+        gsap.to(secref.current, {
+             delay: 0.7,
+                y: -30,
+                opacity: 1,
+                stagger: 0.3,
+            scrollTrigger:{
+                scroller:"body",
+                trigger:secref.current,
+                scrub:2,
+               
+                start:"top 90%",
+                end:"top 10%"
+            }
+
+        })
+    }, [])  
 
 
 
@@ -32,7 +56,7 @@ export default function Zoom() {
     }, [active]);
     return (
         <>
-            <section className=" h-fit mt-10  w-full flex items-center justify-center">
+            <section ref={secref} className=" opacity-0 h-fit mt-10  w-full flex items-center justify-center">
                 <div className=" h-full w-full flex items-center justify-center mt-40 flex-col">
                     <Image
                         ref={imageRef}
@@ -57,7 +81,7 @@ export default function Zoom() {
                             </button>
                         ))}
                     </div>
-                            <div className=" h-64 w-full"></div>
+                            
                 </div>
 
         
