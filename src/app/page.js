@@ -6,6 +6,7 @@ import Design from "./components/Design";
 import Cameras from "./components/Cameras";
 import Zoom from "./components/Zoom";
 import Lens from "./components/Lens";
+import Phone from "./components/Phone";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
     <br/>
     <Zoom/>
     <Lens/>
+    <Phone/>
 
 
    </section>
