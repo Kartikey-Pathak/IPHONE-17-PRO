@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/Nav";
 import Nav2 from "./components/Nav2";
+import SmoothScroll from "./components/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
       >
         <Nav/>
         <Nav2/>
+        <SmoothScroll>
         {children}
+        </SmoothScroll>
       </body>
     </html>
   );
