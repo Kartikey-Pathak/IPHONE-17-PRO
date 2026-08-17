@@ -30,13 +30,16 @@ export default function Phone() {
 
 
     return (
-        <section className=" overflow-hidden flex flex-col w-full h-screen flex items-center justify-center">
+        <section className=" overflow-hidden mb-80 flex flex-col w-full h-fit flex items-center justify-center">
             {/* Gameplay Part */}
             <div ref={ref} className=" scale-180 mt-20 w-full h-[20rem] md:w-[80%] md:h-[30rem] flex items-center justify-center relative">
                 <img src="/frame.png" className="z-20  w-54 md:w-full h-full object-contain" alt="" />
                 <h1 className=" absolute z-50 top-30 font-semibold">Pro video</h1>
                 <h1 className=" absolute z-50 top-40 text-center md:text-4xl font-bold">Any more pro and <br /> it would need an agent.</h1>
                 <video src="/play.mp4" autoPlay loop muted playsInline className=" rounded-3xl  h-24 w-full md:w-[95%] md:h-[36vw] lg:h-[36vw] xl:h-[28vw] lg:w-[78vw] xl:w-[62vw] object-cover rounded-[2rem] z-10 absolute"></video>
+            </div>
+              <div className=" w-[99%] md:w-[60%] text-center mt-40 flex items-center justify-center flex-col">
+                <h1 className=" font-bold text-center text-xl text-[#86868B] md:text-2xl ">From home movies to Hollywood productions, iPhone 17 Pro is up to any challenge. With <span className=" text-white">more pro video features than ever</span>— like enhanced video stabilisation, cinema-grade specs and compatibility with industry-standard workflows — iPhone 17 Pro puts powerful filmmaking tools within reach, wherever you need them.</h1>
             </div>
         </section>
     )
